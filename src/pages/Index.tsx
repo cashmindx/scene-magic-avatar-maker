@@ -330,6 +330,11 @@ const Index = () => {
                 <Button onClick={startListening} variant="outline" className="border-gray-600">
                   <Mic className="w-4 h-4" />
                 </Button>
+<video width="350" controls style={{ marginTop: "1rem", borderRadius: "8px" }}>
+  <source src="/lovable-uploads/talking-avatar.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+                
               </div>
             </CardContent>
           </Card>
