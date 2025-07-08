@@ -356,11 +356,34 @@ const Index = () => {
   </div>
 
 </div> 
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-      </main>
+ <CardContent>
+  <div style={{ display: "flex", gap: "2rem", marginTop: "1rem", alignItems: "flex-start" }}>
+    
+    {/* 🎥 Avatar Video */}
+    <div style={{ flex: 1 }}>
+      <video width="350" controls style={{ borderRadius: "8px" }}>
+        <source src="/lovable-uploads/talking-avatar.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <button style={{ marginTop: "1rem", padding: "0.6rem 1rem", background: "#1e40af", color: "#fff", border: "none", borderRadius: "6px" }}>
+        ▶️ Watch Demo
+      </button>
+    </div>
+
+    {/* 📝 Talking Avatar Features */}
+    <div style={{ flex: 1 }}>
+      <h2 style={{ marginBottom: "1rem", fontSize: "1.5rem", color: "#fff" }}>🎙️ Talking Video Avatars</h2>
+      <ul style={{ listStyleType: "none", paddingLeft: 0, lineHeight: "1.6", color: "#ccc" }}>
+        <li>✅ Rich expressions</li>
+        <li>✅ Lifelike motion</li>
+        <li>✅ 30+ languages</li>
+        <li>✅ HD quality</li>
+        <li>✅ Green screen backgrounds</li>
+      </ul>
+    </div>
+
+  </div>
+</CardContent>
 
       {/* Footer */}
       <footer className="mt-20 py-8 border-t border-gray-700 text-center text-gray-400">
