@@ -389,8 +389,24 @@ const Index = () => {
       <footer className="mt-20 py-8 border-t border-gray-700 text-center text-gray-400">
         <p>© 2025 · SCENE MAKE AI · All rights reserved</p>
       </footer>
-    </div>
-  );
-};
+ <Button onClick={startListening} variant="outline" className="border-gray-600">
+  <Mic className="w-4 h-4" />
+</Button>                      // ← Line 392
+</div>                         // ← Line 393, closes the parent of the button
+<div style={{ flex: 1 }}>      // ← Line 394, starts the text block
+</div>
+
+  <div style={{ flex: 1 }}>           
+  <h2 style={{ marginBottom: "1rem", fontSize: "1.5rem", color: "#fff" }}>
+  🎙️ Talking Video Avatars
+</h2>
+<ul style={{ listStyleType: "none", paddingLeft: 0, lineHeight: "1.6", color: "#ccc" }}>
+  <li>✅ Rich expressions</li>
+  <li>✅ Lifelike motion</li>
+  <li>✅ 30+ languages</li>
+  <li>✅ HD video quality</li>
+  <li>✅ Green screen backgrounds</li>
+</ul>              
+                
 
 export default Index;
