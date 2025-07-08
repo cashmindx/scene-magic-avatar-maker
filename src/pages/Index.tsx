@@ -17,6 +17,13 @@ const Index = () => {
     setChatMessages(prev => [...prev, { type: 'user', message: chatInput }]);
     
     // Simulate bot response
+  [build]
+  command = "npm run build"
+  publish = "dist"
+
+[environment]
+  NODE_VERSION = "18"
+    
     setTimeout(() => {
       setChatMessages(prev => [...prev, { 
         type: 'bot', 
